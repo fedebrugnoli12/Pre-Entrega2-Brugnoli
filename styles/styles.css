@@ -1,0 +1,283 @@
+.fondo { 
+  background-color: beige;
+ }
+.imagendefondo{
+  background-image: url(./../assets/—Pngtree—taobao\ food\ pastry\ shading\ border_1016050.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+nav  {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 5% 10px 5%;
+    background-color: bisque;
+    width: 100%;
+    flex-direction: row;
+    
+  }
+  
+
+nav h1{
+  color: black;            /*texto que se superpone*/
+  text-align: justify;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 20px; /*aca pongo los enlaces en el sitio que quiero*/
+
+}
+
+nav ul li a { 
+   color: #716055; /* cambia de color los items de la nav*/
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+
+
+ 
+nav ul li a { 
+
+    text-decoration: none; /*pone el texto sin subrayado */
+    font-size: 1.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+  }
+ 
+
+  
+
+nav h1 {
+    color:black;             /*texto que se superpone*/
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   
+    }
+
+    .presentacion{
+      text-align: center;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      color: rgb(21, 20, 18);
+      font-family:Arial, Helvetica, sans-serif;
+      font-style:oblique;
+      font-size: 2.5rem;
+      font-weight: 850;
+    }
+
+
+@media (max-width:768px) {
+  body{
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 70vh 10vh;
+    grid-template-areas: 
+    "header"
+    "h2"
+    "footer";
+
+  }
+
+}
+
+
+.footer {
+  /* grid-area: footer; */
+  padding: 10px;
+  
+  display: flex;
+  justify-content:center;
+}
+
+.footer a {
+  display: inline-block;
+  margin: 0 7px 0 7px;
+}
+
+.footer a i {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.footer a i:hover {
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 0px 0px 15px rgb(142, 252, 132);
+}
+
+.iconos {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.facebook {
+  background-image: url("./../assets/facebook-svgrepo-com.svg");
+}
+
+.instagram {
+  background-image: url("./../assets/instagram-round-svgrepo-com.svg");
+}
+
+.twitter {
+  background-image: url("./../assets/twitter-round-svgrepo-com.svg");
+}
+
+.youtube {
+  background-image: url("./../assets/youtube-round-svgrepo-com.svg");
+}
+
+/*Media Queries*/
+@media (max-width:1023px){
+  header{
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .presentacion{
+    font-size: 2.5rem;
+  }
+
+}
+@media (max-width:768px){
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 10vh 30vh 70vh 10vh;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "aside"
+    "main"
+    "footer"
+
+
+  }
+}
+
+
+
+
+
+
+/*PAGINA NOSOTROS*/
+.pasteleria{
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main div img{
+  margin-left: 150px; /*Separacion de imagen*/
+}
+
+.subtitulo{
+  text-align: center;
+  font-style: italic;
+}
+.masas { 
+ float: right;
+ margin-right: 40px;
+}
+.descripcion { 
+  font-family:sans-serif;
+  font-style: normal;
+  font-size: 25px; 
+  text-align: justify;
+  margin-left: 50px;
+}
+
+/* PAGINA CONOCENOS*/
+.fondocartas{
+  background-color:wheat;
+}
+
+.bordes{
+  border-top: solid 5px rosybrown; /*La clase esta dentro del div p(dos clases juntas)*/
+  border-radius: 5px;
+}
+
+ div h4{
+  font-size: 2rem;
+  color:rosybrown;
+}
+div  p{
+  font-size: 22px;
+}
+
+/*PAGINA SERVICIO*/
+
+div tr th{
+  color:goldenrod;
+  font-size: 1.5rem;
+  font-family:sans-serif;
+}
+div tr td{
+  color:rgb(231, 131, 0);
+  font-size:1.2rem;
+}
+.subrayado{
+  border-top: solid 5px rgb(206, 213, 0);
+}
+
+.titulo{
+  text-align: center;
+  font-family: fantasy;
+  color: gold;
+}
+.margenes{
+  margin-right: 100px; /*Cambio la distancia entre elementos*/
+}
+.dimension{
+  height: 80%;
+}
+
+
+/*PAGINA CONTACTANOS*/
+.punto{
+  font-size: 2rem;
+  font-weight: 400;
+}
+.buscanos{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+.redes{
+  font-size: 1.4rem;
+  font-weight: 100;
+
+}
+
+.infopersona{
+  font-size: 2rem;
+}
+
+.formulario{
+  font-size: 20px;
+  font-style: oblique;  /*Estilizo titulos de rellenar*/
+  font-family:serif;
+  font-weight: 800;
+  color:crimson;
+}
+
+
+
+@media (max-width: 600px) {
+  .navegacion ul li {
+      display:block;
+      width: 100%;   /* ACA MODIFICAR PARA VER EN CELULAR*/
+      height: 80%;
+    }
+    
+  }
